@@ -1,32 +1,51 @@
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
+# --- C++ build artifacts ---
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
 *.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
-*.lib
-
-# Executables
-*.exe
 *.out
-*.app
+*.exe
+*.gch
+
+# --- Bison & Flex generated files ---
+*.tab.cpp
+*.tab.hpp
+*.yy.cpp
+*.output
+
+# --- Binaries and intermediate files ---
+build/
+bin/
+out/
+*.dSYM/
+*.log
+*.tmp
+*.swp
+*.bak
+
+# --- Editor & OS specific ---
+.vscode/
+.idea/
+*.iml
+*.directory
+.DS_Store
+Thumbs.db
+
+# --- CMake ---
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+
+# --- Test outputs ---
+test-results/
+*.testlog
+
+# --- Backup files ---
+*~
+# Emacs
+.#*
+# Vim
+*.swo
+*.swn
+*.swp
